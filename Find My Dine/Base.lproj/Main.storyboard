@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="osd-bk-m9L">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="x9p-Hv-T88">
+            <objects>
+                <navigationController id="osd-bk-m9L" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gf1-PI-iI8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Yjw-gL-zzI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Oh-Sx-0fB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-567" y="96"/>
+        </scene>
+        <!--Find My DineVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FindMyDineVC" id="BYZ-38-t0r" customClass="FindMyDineVC" customModule="Find_My_Dine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FKf-S0-Lny">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="rF1-2d-BOh"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NCH-9c-14z"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FKf-S0-Lny" secondAttribute="trailing" id="5EW-6P-Ll2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FKf-S0-Lny" secondAttribute="bottom" id="9Cf-0n-NII"/>
+                            <constraint firstItem="FKf-S0-Lny" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Iue-ic-9zM"/>
+                            <constraint firstItem="FKf-S0-Lny" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="X75-uM-3rx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="u0f-rh-NOs">
+                        <barButtonItem key="leftBarButtonItem" image="ic_refresh" id="UUe-k6-zLS">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="Barbtn_Refresh_Click:" destination="BYZ-38-t0r" id="J4t-22-yTX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="ic_search" id="B4n-ov-nLx">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="Barbtn_Search_Click:" destination="BYZ-38-t0r" id="O5m-IV-JCm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="Barbtn_Refresh" destination="UUe-k6-zLS" id="DeR-cS-5bV"/>
+                        <outlet property="Barbtn_Search" destination="B4n-ov-nLx" id="hlb-b0-U5N"/>
+                        <outlet property="tbl_Resturants" destination="FKf-S0-Lny" id="FxG-Jv-B2N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="97"/>
+        </scene>
+        <!--SearchVC-->
+        <scene sceneID="qeB-N6-gel">
+            <objects>
+                <viewController storyboardIdentifier="SearchVC" id="UGO-v6-vEP" customClass="SearchVC" customModule="Find_My_Dine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oI4-T0-X2K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="JOf-wD-AKl">
+                                <rect key="frame" x="0.0" y="52" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xML-ql-axb"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="UGO-v6-vEP" id="A2W-Vf-iEZ"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gNl-jG-5TC">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="UGO-v6-vEP" id="CT8-2K-BVC"/>
+                                    <outlet property="delegate" destination="UGO-v6-vEP" id="U7b-Ap-djG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gNl-jG-5TC" firstAttribute="bottom" secondItem="Pkt-BZ-dTy" secondAttribute="bottom" id="ENh-8b-7CS"/>
+                            <constraint firstItem="Pkt-BZ-dTy" firstAttribute="trailing" secondItem="gNl-jG-5TC" secondAttribute="trailing" id="GuT-2w-G4K"/>
+                            <constraint firstItem="JOf-wD-AKl" firstAttribute="leading" secondItem="Pkt-BZ-dTy" secondAttribute="leading" id="Odc-Ef-Ve6"/>
+                            <constraint firstItem="JOf-wD-AKl" firstAttribute="top" secondItem="Pkt-BZ-dTy" secondAttribute="top" constant="8" id="XCu-8C-QBN"/>
+                            <constraint firstItem="gNl-jG-5TC" firstAttribute="leading" secondItem="Pkt-BZ-dTy" secondAttribute="leading" id="YKW-eo-gqv"/>
+                            <constraint firstItem="gNl-jG-5TC" firstAttribute="top" secondItem="JOf-wD-AKl" secondAttribute="bottom" id="kHl-jE-hmb"/>
+                            <constraint firstItem="JOf-wD-AKl" firstAttribute="trailing" secondItem="Pkt-BZ-dTy" secondAttribute="trailing" id="mJi-67-RPY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pkt-BZ-dTy"/>
+                    </view>
+                    <connections>
+                        <outlet property="tbl_CitySearch" destination="gNl-jG-5TC" id="oMk-e7-tVP"/>
+                        <outlet property="txt_Searchbar" destination="JOf-wD-AKl" id="EW2-jd-i3G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YEh-E9-B0M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811.59420289855075" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_refresh" width="22" height="22"/>
+        <image name="ic_search" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="310" id="KGk-i7-Jjw" customClass="Resturant_Cell" customModule="Find_My_Dine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="310"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="310"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_Place_Holder" translatesAutoresizingMaskIntoConstraints="NO" id="5aj-kD-tx5">
+                        <rect key="frame" x="8" y="5" width="367" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="QAz-cA-uLO"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yt-nS-yJ0">
+                        <rect key="frame" x="8" y="155" width="359" height="155"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Shop Address" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqF-iu-XZj">
+                                <rect key="frame" x="0.0" y="43" width="359" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="4a1-iT-VGj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burger King" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4H-8n-n5g">
+                                <rect key="frame" x="0.0" y="5" width="359" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="GwK-gu-Sh9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10276 Votes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="os7-o5-Zrq">
+                                <rect key="frame" x="0.0" y="125" width="100" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="2V7-aA-tQi"/>
+                                    <constraint firstAttribute="width" constant="100" id="OLf-hJ-i09"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avreage Cost For Two Person : 500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZT-zL-pO9">
+                                <rect key="frame" x="0.0" y="95" width="359" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="0HH-R4-5dD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.2 /5.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geF-aW-3sK">
+                                <rect key="frame" x="142" y="125" width="75" height="25"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="36d-U6-6Jc"/>
+                                    <constraint firstAttribute="width" constant="75" id="dFV-QN-Eef"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dZT-zL-pO9" firstAttribute="leading" secondItem="8yt-nS-yJ0" secondAttribute="leading" id="4NC-xo-BEt"/>
+                            <constraint firstItem="geF-aW-3sK" firstAttribute="centerX" secondItem="8yt-nS-yJ0" secondAttribute="centerX" id="87V-1U-EOq"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="At5-1T-4RO"/>
+                            <constraint firstItem="dZT-zL-pO9" firstAttribute="top" secondItem="JqF-iu-XZj" secondAttribute="bottom" constant="3" id="D7d-Hz-oIz"/>
+                            <constraint firstAttribute="bottom" secondItem="os7-o5-Zrq" secondAttribute="bottom" constant="5" id="G90-cK-YgJ"/>
+                            <constraint firstItem="geF-aW-3sK" firstAttribute="top" secondItem="dZT-zL-pO9" secondAttribute="bottom" constant="5" id="Nza-ky-TWd"/>
+                            <constraint firstAttribute="bottom" secondItem="geF-aW-3sK" secondAttribute="bottom" constant="5" id="Oon-Nd-vwq"/>
+                            <constraint firstItem="d4H-8n-n5g" firstAttribute="leading" secondItem="8yt-nS-yJ0" secondAttribute="leading" id="VRu-Rq-EW1"/>
+                            <constraint firstItem="JqF-iu-XZj" firstAttribute="top" secondItem="d4H-8n-n5g" secondAttribute="bottom" constant="3" id="aVC-WV-X4F"/>
+                            <constraint firstItem="d4H-8n-n5g" firstAttribute="top" secondItem="8yt-nS-yJ0" secondAttribute="top" constant="5" id="avi-Z0-MDQ"/>
+                            <constraint firstItem="os7-o5-Zrq" firstAttribute="leading" secondItem="8yt-nS-yJ0" secondAttribute="leading" id="dab-qd-xwI"/>
+                            <constraint firstItem="JqF-iu-XZj" firstAttribute="leading" secondItem="8yt-nS-yJ0" secondAttribute="leading" id="kqg-kf-RS1"/>
+                            <constraint firstAttribute="trailing" secondItem="d4H-8n-n5g" secondAttribute="trailing" id="naq-jN-l2a"/>
+                            <constraint firstAttribute="trailing" secondItem="JqF-iu-XZj" secondAttribute="trailing" id="uIe-DX-44Y"/>
+                            <constraint firstItem="os7-o5-Zrq" firstAttribute="top" secondItem="dZT-zL-pO9" secondAttribute="bottom" constant="5" id="uV8-XF-a7D"/>
+                            <constraint firstAttribute="trailing" secondItem="dZT-zL-pO9" secondAttribute="trailing" id="xLL-PT-ZUi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5aj-kD-tx5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="0dV-9R-Mtn"/>
+                    <constraint firstAttribute="trailing" secondItem="8yt-nS-yJ0" secondAttribute="trailing" constant="8" id="Ioh-Jb-ymT"/>
+                    <constraint firstAttribute="trailing" secondItem="5aj-kD-tx5" secondAttribute="trailing" id="Pon-UM-voG"/>
+                    <constraint firstItem="5aj-kD-tx5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Pxi-WY-Q84"/>
+                    <constraint firstItem="8yt-nS-yJ0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="haP-Mx-t3F"/>
+                    <constraint firstItem="8yt-nS-yJ0" firstAttribute="top" secondItem="5aj-kD-tx5" secondAttribute="bottom" id="kas-dC-TbR"/>
+                    <constraint firstAttribute="bottom" secondItem="8yt-nS-yJ0" secondAttribute="bottom" id="mWa-4q-1Dg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="img" destination="5aj-kD-tx5" id="Xez-oN-ypX"/>
+                <outlet property="lbl_Address" destination="JqF-iu-XZj" id="nB8-FS-aDd"/>
+                <outlet property="lbl_Avrage_Cost" destination="dZT-zL-pO9" id="yLZ-EL-0Vl"/>
+                <outlet property="lbl_Rating" destination="geF-aW-3sK" id="Oq2-oK-8yk"/>
+                <outlet property="lbl_ResturantName" destination="d4H-8n-n5g" id="29b-Sn-LXS"/>
+                <outlet property="lbl_Votes" destination="os7-o5-Zrq" id="NID-fh-sSx"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="196.875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_Place_Holder" width="600" height="600"/>
+    </resources>
+</document>

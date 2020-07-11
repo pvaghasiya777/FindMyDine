@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D37397CDE91775BF6B7830C /* Pods_Find_My_Dine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618764F175A06C6D9F3423CD /* Pods_Find_My_Dine.framework */; };
+		E446E35324B880FB00AE1605 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E446E35224B880FB00AE1605 /* Model.swift */; };
+		E49065D2248AAC5800523A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49065D1248AAC5800523A20 /* AppDelegate.swift */; };
+		E49065D4248AAC5800523A20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49065D3248AAC5800523A20 /* SceneDelegate.swift */; };
+		E49065D9248AAC5800523A20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49065D7248AAC5800523A20 /* Main.storyboard */; };
+		E49065DB248AAC5A00523A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49065DA248AAC5A00523A20 /* Assets.xcassets */; };
+		E49065DE248AAC5A00523A20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49065DC248AAC5A00523A20 /* LaunchScreen.storyboard */; };
+		E4906621248AACA300523A20 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49065E7248AACA300523A20 /* SearchCell.swift */; };
+		E4906622248AACA300523A20 /* Resturant_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49065E8248AACA300523A20 /* Resturant_Cell.swift */; };
+		E4906624248AACA300523A20 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49065ED248AACA300523A20 /* Reachability.swift */; };
+		E4906625248AACA300523A20 /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49065EE248AACA300523A20 /* SearchCell.xib */; };
+		E4906639248AACA300523A20 /* Resturant_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4906616248AACA300523A20 /* Resturant_Cell.xib */; };
+		E490663A248AACA300523A20 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4906618248AACA300523A20 /* SwiftyJSON.swift */; };
+		E490663B248AACA300523A20 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4906619248AACA300523A20 /* Extentions.swift */; };
+		E490663C248AACA300523A20 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490661A248AACA300523A20 /* Config.swift */; };
+		E490663D248AACA300523A20 /* AFWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490661B248AACA300523A20 /* AFWrapper.swift */; };
+		E490663E248AACA300523A20 /* CitySearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490661D248AACA300523A20 /* CitySearchModel.swift */; };
+		E4906640248AACA300523A20 /* ServiceCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490661F248AACA300523A20 /* ServiceCall.swift */; };
+		E4906641248AACA300523A20 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4906620248AACA300523A20 /* Utils.swift */; };
+		E49066F3248AADBF00523A20 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066CB248AADBF00523A20 /* UIView+Toast.m */; };
+		E49066F4248AADBF00523A20 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E49066CD248AADBF00523A20 /* LICENSE */; };
+		E49066F5248AADBF00523A20 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E49066CE248AADBF00523A20 /* README.md */; };
+		E49066F6248AADBF00523A20 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066D3248AADBF00523A20 /* SDWebImageManager.m */; };
+		E49066F7248AADBF00523A20 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066D4248AADBF00523A20 /* SDWebImageDecoder.m */; };
+		E49066F8248AADBF00523A20 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066D6248AADBF00523A20 /* UIImageView+HighlightedWebCache.m */; };
+		E49066F9248AADBF00523A20 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066D9248AADBF00523A20 /* SDWebImageDownloader.m */; };
+		E49066FA248AADBF00523A20 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066DA248AADBF00523A20 /* UIImage+GIF.m */; };
+		E49066FB248AADBF00523A20 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066DC248AADBF00523A20 /* UIImage+MultiFormat.m */; };
+		E49066FC248AADBF00523A20 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066DD248AADBF00523A20 /* SDWebImageCompat.m */; };
+		E49066FD248AADBF00523A20 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066DE248AADBF00523A20 /* SDWebImagePrefetcher.m */; };
+		E49066FE248AADBF00523A20 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066E1248AADBF00523A20 /* SDImageCache.m */; };
+		E49066FF248AADBF00523A20 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066E3248AADBF00523A20 /* SDWebImageDownloaderOperation.m */; };
+		E4906700248AADBF00523A20 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066E6248AADBF00523A20 /* NSData+ImageContentType.m */; };
+		E4906701248AADBF00523A20 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066E7248AADBF00523A20 /* UIImageView+WebCache.m */; };
+		E4906702248AADBF00523A20 /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066E9248AADBF00523A20 /* NSImage+WebCache.m */; };
+		E4906703248AADBF00523A20 /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066EB248AADBF00523A20 /* SDImageCacheConfig.m */; };
+		E4906704248AADBF00523A20 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066EC248AADBF00523A20 /* UIView+WebCacheOperation.m */; };
+		E4906705248AADBF00523A20 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066ED248AADBF00523A20 /* UIView+WebCache.m */; };
+		E4906706248AADBF00523A20 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E49066F1248AADBF00523A20 /* UIButton+WebCache.m */; };
+		E4906708248AAEFE00523A20 /* FindMyDineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4906707248AAEFE00523A20 /* FindMyDineVC.swift */; };
+		E490670A248AAF0D00523A20 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4906709248AAF0D00523A20 /* SearchVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		618764F175A06C6D9F3423CD /* Pods_Find_My_Dine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Find_My_Dine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82E6843A496D9D3652475C6D /* Pods-Find My Dine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find My Dine.release.xcconfig"; path = "Target Support Files/Pods-Find My Dine/Pods-Find My Dine.release.xcconfig"; sourceTree = "<group>"; };
+		DDCF5674F9D30CBCD2B28150 /* Pods-Find My Dine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find My Dine.debug.xcconfig"; path = "Target Support Files/Pods-Find My Dine/Pods-Find My Dine.debug.xcconfig"; sourceTree = "<group>"; };
+		E446E35224B880FB00AE1605 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E49065CE248AAC5800523A20 /* Find My Dine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find My Dine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49065D1248AAC5800523A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E49065D3248AAC5800523A20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E49065D8248AAC5800523A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E49065DA248AAC5A00523A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E49065DD248AAC5A00523A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E49065DF248AAC5A00523A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49065E7248AACA300523A20 /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		E49065E8248AACA300523A20 /* Resturant_Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resturant_Cell.swift; sourceTree = "<group>"; };
+		E49065ED248AACA300523A20 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		E49065EE248AACA300523A20 /* SearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
+		E4906616248AACA300523A20 /* Resturant_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Resturant_Cell.xib; sourceTree = "<group>"; };
+		E4906618248AACA300523A20 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		E4906619248AACA300523A20 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		E490661A248AACA300523A20 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		E490661B248AACA300523A20 /* AFWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFWrapper.swift; sourceTree = "<group>"; };
+		E490661D248AACA300523A20 /* CitySearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitySearchModel.swift; sourceTree = "<group>"; };
+		E490661F248AACA300523A20 /* ServiceCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCall.swift; sourceTree = "<group>"; };
+		E4906620248AACA300523A20 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E4906649248AAD2900523A20 /* Find My Dine-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Find My Dine-Bridging-Header.h"; sourceTree = "<group>"; };
+		E49066CA248AADBF00523A20 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		E49066CB248AADBF00523A20 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		E49066CD248AADBF00523A20 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E49066CE248AADBF00523A20 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E49066D0248AADBF00523A20 /* NSImage+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+WebCache.h"; sourceTree = "<group>"; };
+		E49066D1248AADBF00523A20 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		E49066D2248AADBF00523A20 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		E49066D3248AADBF00523A20 /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		E49066D4248AADBF00523A20 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		E49066D5248AADBF00523A20 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		E49066D6248AADBF00523A20 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		E49066D7248AADBF00523A20 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		E49066D8248AADBF00523A20 /* SDImageCacheConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCacheConfig.h; sourceTree = "<group>"; };
+		E49066D9248AADBF00523A20 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		E49066DA248AADBF00523A20 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		E49066DB248AADBF00523A20 /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		E49066DC248AADBF00523A20 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		E49066DD248AADBF00523A20 /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		E49066DE248AADBF00523A20 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		E49066DF248AADBF00523A20 /* UIView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCache.h"; sourceTree = "<group>"; };
+		E49066E0248AADBF00523A20 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		E49066E1248AADBF00523A20 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		E49066E2248AADBF00523A20 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		E49066E3248AADBF00523A20 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		E49066E4248AADBF00523A20 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		E49066E5248AADBF00523A20 /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		E49066E6248AADBF00523A20 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		E49066E7248AADBF00523A20 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		E49066E8248AADBF00523A20 /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		E49066E9248AADBF00523A20 /* NSImage+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+WebCache.m"; sourceTree = "<group>"; };
+		E49066EA248AADBF00523A20 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		E49066EB248AADBF00523A20 /* SDImageCacheConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCacheConfig.m; sourceTree = "<group>"; };
+		E49066EC248AADBF00523A20 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		E49066ED248AADBF00523A20 /* UIView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCache.m"; sourceTree = "<group>"; };
+		E49066EE248AADBF00523A20 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		E49066EF248AADBF00523A20 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		E49066F0248AADBF00523A20 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		E49066F1248AADBF00523A20 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		E49066F2248AADBF00523A20 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		E4906707248AAEFE00523A20 /* FindMyDineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyDineVC.swift; sourceTree = "<group>"; };
+		E4906709248AAF0D00523A20 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E49065CB248AAC5800523A20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D37397CDE91775BF6B7830C /* Pods_Find_My_Dine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38979BD8D4039ACFC851F8FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDCF5674F9D30CBCD2B28150 /* Pods-Find My Dine.debug.xcconfig */,
+				82E6843A496D9D3652475C6D /* Pods-Find My Dine.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		665104E3A8C1861C94EF69AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				618764F175A06C6D9F3423CD /* Pods_Find_My_Dine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E49065C5248AAC5800523A20 = {
+			isa = PBXGroup;
+			children = (
+				E49065D0248AAC5800523A20 /* Find My Dine */,
+				E49065CF248AAC5800523A20 /* Products */,
+				38979BD8D4039ACFC851F8FA /* Pods */,
+				665104E3A8C1861C94EF69AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E49065CF248AAC5800523A20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E49065CE248AAC5800523A20 /* Find My Dine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E49065D0248AAC5800523A20 /* Find My Dine */ = {
+			isa = PBXGroup;
+			children = (
+				E49065D1248AAC5800523A20 /* AppDelegate.swift */,
+				E49065D3248AAC5800523A20 /* SceneDelegate.swift */,
+				E49065E5248AAC8500523A20 /* ViewController */,
+				E49065E6248AACA300523A20 /* Utility */,
+				E4906617248AACA300523A20 /* Utils */,
+				E49065D7248AAC5800523A20 /* Main.storyboard */,
+				E49065DA248AAC5A00523A20 /* Assets.xcassets */,
+				E49065DC248AAC5A00523A20 /* LaunchScreen.storyboard */,
+				E49065DF248AAC5A00523A20 /* Info.plist */,
+				E4906649248AAD2900523A20 /* Find My Dine-Bridging-Header.h */,
+			);
+			path = "Find My Dine";
+			sourceTree = "<group>";
+		};
+		E49065E5248AAC8500523A20 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E4906707248AAEFE00523A20 /* FindMyDineVC.swift */,
+				E4906709248AAF0D00523A20 /* SearchVC.swift */,
+				E446E35224B880FB00AE1605 /* Model.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E49065E6248AACA300523A20 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E49066CC248AADBF00523A20 /* SDWebImage */,
+				E49066C9248AADBF00523A20 /* TOAST */,
+				E4906642248AACD200523A20 /* CustomeCell */,
+				E49065EC248AACA300523A20 /* Reachability */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		E49065EC248AACA300523A20 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				E49065ED248AACA300523A20 /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		E4906617248AACA300523A20 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E490661C248AACA300523A20 /* Model */,
+				E4906618248AACA300523A20 /* SwiftyJSON.swift */,
+				E4906619248AACA300523A20 /* Extentions.swift */,
+				E490661A248AACA300523A20 /* Config.swift */,
+				E490661B248AACA300523A20 /* AFWrapper.swift */,
+				E490661F248AACA300523A20 /* ServiceCall.swift */,
+				E4906620248AACA300523A20 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E490661C248AACA300523A20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E490661D248AACA300523A20 /* CitySearchModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4906642248AACD200523A20 /* CustomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				E49065E7248AACA300523A20 /* SearchCell.swift */,
+				E49065EE248AACA300523A20 /* SearchCell.xib */,
+				E49065E8248AACA300523A20 /* Resturant_Cell.swift */,
+				E4906616248AACA300523A20 /* Resturant_Cell.xib */,
+			);
+			path = CustomeCell;
+			sourceTree = "<group>";
+		};
+		E49066C9248AADBF00523A20 /* TOAST */ = {
+			isa = PBXGroup;
+			children = (
+				E49066CA248AADBF00523A20 /* UIView+Toast.h */,
+				E49066CB248AADBF00523A20 /* UIView+Toast.m */,
+			);
+			path = TOAST;
+			sourceTree = "<group>";
+		};
+		E49066CC248AADBF00523A20 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				E49066CD248AADBF00523A20 /* LICENSE */,
+				E49066CE248AADBF00523A20 /* README.md */,
+				E49066CF248AADBF00523A20 /* SDWebImage */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		E49066CF248AADBF00523A20 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				E49066D0248AADBF00523A20 /* NSImage+WebCache.h */,
+				E49066D1248AADBF00523A20 /* UIImageView+WebCache.h */,
+				E49066D2248AADBF00523A20 /* NSData+ImageContentType.h */,
+				E49066D3248AADBF00523A20 /* SDWebImageManager.m */,
+				E49066D4248AADBF00523A20 /* SDWebImageDecoder.m */,
+				E49066D5248AADBF00523A20 /* SDWebImageDownloaderOperation.h */,
+				E49066D6248AADBF00523A20 /* UIImageView+HighlightedWebCache.m */,
+				E49066D7248AADBF00523A20 /* SDImageCache.h */,
+				E49066D8248AADBF00523A20 /* SDImageCacheConfig.h */,
+				E49066D9248AADBF00523A20 /* SDWebImageDownloader.m */,
+				E49066DA248AADBF00523A20 /* UIImage+GIF.m */,
+				E49066DB248AADBF00523A20 /* UIButton+WebCache.h */,
+				E49066DC248AADBF00523A20 /* UIImage+MultiFormat.m */,
+				E49066DD248AADBF00523A20 /* SDWebImageCompat.m */,
+				E49066DE248AADBF00523A20 /* SDWebImagePrefetcher.m */,
+				E49066DF248AADBF00523A20 /* UIView+WebCache.h */,
+				E49066E0248AADBF00523A20 /* UIView+WebCacheOperation.h */,
+				E49066E1248AADBF00523A20 /* SDImageCache.m */,
+				E49066E2248AADBF00523A20 /* UIImageView+HighlightedWebCache.h */,
+				E49066E3248AADBF00523A20 /* SDWebImageDownloaderOperation.m */,
+				E49066E4248AADBF00523A20 /* SDWebImageDecoder.h */,
+				E49066E5248AADBF00523A20 /* SDWebImageManager.h */,
+				E49066E6248AADBF00523A20 /* NSData+ImageContentType.m */,
+				E49066E7248AADBF00523A20 /* UIImageView+WebCache.m */,
+				E49066E8248AADBF00523A20 /* SDWebImageOperation.h */,
+				E49066E9248AADBF00523A20 /* NSImage+WebCache.m */,
+				E49066EA248AADBF00523A20 /* SDWebImageDownloader.h */,
+				E49066EB248AADBF00523A20 /* SDImageCacheConfig.m */,
+				E49066EC248AADBF00523A20 /* UIView+WebCacheOperation.m */,
+				E49066ED248AADBF00523A20 /* UIView+WebCache.m */,
+				E49066EE248AADBF00523A20 /* SDWebImagePrefetcher.h */,
+				E49066EF248AADBF00523A20 /* SDWebImageCompat.h */,
+				E49066F0248AADBF00523A20 /* UIImage+MultiFormat.h */,
+				E49066F1248AADBF00523A20 /* UIButton+WebCache.m */,
+				E49066F2248AADBF00523A20 /* UIImage+GIF.h */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E49065CD248AAC5800523A20 /* Find My Dine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E49065E2248AAC5A00523A20 /* Build configuration list for PBXNativeTarget "Find My Dine" */;
+			buildPhases = (
+				F12B4092FE4A7639836CE099 /* [CP] Check Pods Manifest.lock */,
+				E49065CA248AAC5800523A20 /* Sources */,
+				E49065CB248AAC5800523A20 /* Frameworks */,
+				E49065CC248AAC5800523A20 /* Resources */,
+				6A86921C664C29B0607C50BC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Find My Dine";
+			productName = "Find My Dine";
+			productReference = E49065CE248AAC5800523A20 /* Find My Dine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E49065C6248AAC5800523A20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = Captain;
+				TargetAttributes = {
+					E49065CD248AAC5800523A20 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+				};
+			};
+			buildConfigurationList = E49065C9248AAC5800523A20 /* Build configuration list for PBXProject "Find My Dine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E49065C5248AAC5800523A20;
+			productRefGroup = E49065CF248AAC5800523A20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E49065CD248AAC5800523A20 /* Find My Dine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E49065CC248AAC5800523A20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E49066F4248AADBF00523A20 /* LICENSE in Resources */,
+				E4906639248AACA300523A20 /* Resturant_Cell.xib in Resources */,
+				E49065DE248AAC5A00523A20 /* LaunchScreen.storyboard in Resources */,
+				E49066F5248AADBF00523A20 /* README.md in Resources */,
+				E4906625248AACA300523A20 /* SearchCell.xib in Resources */,
+				E49065DB248AAC5A00523A20 /* Assets.xcassets in Resources */,
+				E49065D9248AAC5800523A20 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A86921C664C29B0607C50BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Find My Dine/Pods-Find My Dine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Find My Dine/Pods-Find My Dine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Find My Dine/Pods-Find My Dine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F12B4092FE4A7639836CE099 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Find My Dine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E49065CA248AAC5800523A20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E49066F8248AADBF00523A20 /* UIImageView+HighlightedWebCache.m in Sources */,
+				E4906624248AACA300523A20 /* Reachability.swift in Sources */,
+				E49066F6248AADBF00523A20 /* SDWebImageManager.m in Sources */,
+				E490663C248AACA300523A20 /* Config.swift in Sources */,
+				E490663D248AACA300523A20 /* AFWrapper.swift in Sources */,
+				E4906706248AADBF00523A20 /* UIButton+WebCache.m in Sources */,
+				E49066F3248AADBF00523A20 /* UIView+Toast.m in Sources */,
+				E490663B248AACA300523A20 /* Extentions.swift in Sources */,
+				E49066FE248AADBF00523A20 /* SDImageCache.m in Sources */,
+				E4906703248AADBF00523A20 /* SDImageCacheConfig.m in Sources */,
+				E49066F7248AADBF00523A20 /* SDWebImageDecoder.m in Sources */,
+				E490670A248AAF0D00523A20 /* SearchVC.swift in Sources */,
+				E4906705248AADBF00523A20 /* UIView+WebCache.m in Sources */,
+				E4906708248AAEFE00523A20 /* FindMyDineVC.swift in Sources */,
+				E49066FB248AADBF00523A20 /* UIImage+MultiFormat.m in Sources */,
+				E49066FC248AADBF00523A20 /* SDWebImageCompat.m in Sources */,
+				E490663E248AACA300523A20 /* CitySearchModel.swift in Sources */,
+				E4906640248AACA300523A20 /* ServiceCall.swift in Sources */,
+				E49066FD248AADBF00523A20 /* SDWebImagePrefetcher.m in Sources */,
+				E4906700248AADBF00523A20 /* NSData+ImageContentType.m in Sources */,
+				E4906621248AACA300523A20 /* SearchCell.swift in Sources */,
+				E4906641248AACA300523A20 /* Utils.swift in Sources */,
+				E49066F9248AADBF00523A20 /* SDWebImageDownloader.m in Sources */,
+				E490663A248AACA300523A20 /* SwiftyJSON.swift in Sources */,
+				E4906704248AADBF00523A20 /* UIView+WebCacheOperation.m in Sources */,
+				E4906622248AACA300523A20 /* Resturant_Cell.swift in Sources */,
+				E4906702248AADBF00523A20 /* NSImage+WebCache.m in Sources */,
+				E49066FF248AADBF00523A20 /* SDWebImageDownloaderOperation.m in Sources */,
+				E4906701248AADBF00523A20 /* UIImageView+WebCache.m in Sources */,
+				E49065D2248AAC5800523A20 /* AppDelegate.swift in Sources */,
+				E446E35324B880FB00AE1605 /* Model.swift in Sources */,
+				E49066FA248AADBF00523A20 /* UIImage+GIF.m in Sources */,
+				E49065D4248AAC5800523A20 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E49065D7248AAC5800523A20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E49065D8248AAC5800523A20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E49065DC248AAC5A00523A20 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E49065DD248AAC5A00523A20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E49065E0248AAC5A00523A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E49065E1248AAC5A00523A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E49065E3248AAC5A00523A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDCF5674F9D30CBCD2B28150 /* Pods-Find My Dine.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4697XJM295;
+				INFOPLIST_FILE = "Find My Dine/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pragma.Find-My-Dine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Find My Dine/Find My Dine-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E49065E4248AAC5A00523A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82E6843A496D9D3652475C6D /* Pods-Find My Dine.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4697XJM295;
+				INFOPLIST_FILE = "Find My Dine/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pragma.Find-My-Dine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Find My Dine/Find My Dine-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E49065C9248AAC5800523A20 /* Build configuration list for PBXProject "Find My Dine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E49065E0248AAC5A00523A20 /* Debug */,
+				E49065E1248AAC5A00523A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E49065E2248AAC5A00523A20 /* Build configuration list for PBXNativeTarget "Find My Dine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E49065E3248AAC5A00523A20 /* Debug */,
+				E49065E4248AAC5A00523A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E49065C6248AAC5800523A20 /* Project object */;
+}
